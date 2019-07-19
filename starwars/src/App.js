@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
 import CharacterList from "./components/CharacterList";
+import GlobalStyle from "./GlobalStyle";
+
 const App = () => {
   const [starwars, setStarwars] = useState([]);
   useEffect(() => {
@@ -12,7 +14,8 @@ const App = () => {
 
   console.log(starwars);
   return (
-    <div className="App">
+    <div>
+      <GlobalStyle />
       <h1 className="Header">React Wars</h1>
       <CharacterList props={starwars} />
     </div>
