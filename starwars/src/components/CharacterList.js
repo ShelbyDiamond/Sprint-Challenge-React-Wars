@@ -1,5 +1,5 @@
 import React from "react";
-import CharacterCard from "./CharacterCard";
+import CharacterCard from "/components/CharactersList";
 import shortid from "shortid";
 
 const CharactersList = props => {

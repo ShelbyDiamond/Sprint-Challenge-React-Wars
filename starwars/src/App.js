@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import axios from "axios";
+import CharacterList from "./components/CharacterCard";
 
 const App = () => {
   const [starWarsData, setStarWarsData] = useState([]);
@@ -27,7 +28,7 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
-      <div />
+      <CharacterList props={starWarsData} />
     </div>
   );
 };
