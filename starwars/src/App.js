@@ -7,23 +7,10 @@ const App = () => {
   const [starWarsData, setStarWarsData] = useState([]);
 
   useEffect(() => {
-    axios
-
-      .get("https://swapi.co/api/people/")
-
-      .then(response => {
-        setStarWarsData(response.data.results);
-      })
-
-      .catch(error => {
-        console.log(
-          "This site is broken, however do not fret -- Starwars sucks anyway",
-          error
-        );
-      });
+    axios.get("https://swapi.co/api/people/").then(element => {
+      setStarWarsData(element.data.results);
+    });
   }, []);
-
-  console.log(starWarsData);
 
   return (
     <div className="App">
