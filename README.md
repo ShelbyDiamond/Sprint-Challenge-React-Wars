@@ -1,6 +1,12 @@
-# Sprint Challenge: React - Star Wars
+<h1 align="center">Welcome to React - Starwars 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://twitter.com/ShelbyN_Diamond">
+    <img alt="Twitter: ShelbyN_Diamond" src="https://img.shields.io/twitter/follow/ShelbyN_Diamond.svg?style=social" target="_blank" />
+  </a>
+</p>
 
-This challenge allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project. This Sprint explored ReactJS, Function Components, component state and side effects. In your challenge for this Sprint, you will demonstrate proficiency by creating an application that uses ReactJS to consume live data retrieved from the World Wide Web and style that data nicely on the page.
+> This challenge allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project. This Sprint explored ReactJS, Function Components, component state and side effects. In your challenge for this Sprint, you will demonstrate proficiency by creating an application that uses ReactJS to consume live data retrieved from the World Wide Web and style that data nicely on the page.
 
 ## Instructions
 
@@ -26,13 +32,27 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+        React JS is a library. It tries to solve the problems of:
+            - cleaner more consice code
+            - easier to read
+            - consolidates pages of codes (HTML/CSS/JAVASCRIPT)
+            - it's designed to scale small companies or projects to larger ones.
+
 - [ ] What does it mean to _think_ in react?
+
+        It means that you should look at everything as a reusable componant (header, footer, nav)
 
 - [ ] Describe state.
 
-- [ ] Describe props.
+        state = data. so useState is like a filing cabnit because it stores the data, but state alone would reference the data itself.
+
+* [ ] Describe props.
+
+        Props link data between components. so a parent class could hold the text "button" and it would send that data to the child component through a prop, so that the button can display the text "button" because the child doesn't know to look at the state (data) to find the text itself.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+        A side effect is anything that affects something outside the scope of the function being executed. An example is useEffect.
 
 ## Project Set Up
 
@@ -45,22 +65,20 @@ Follow these steps to set up and work on your project:
 - [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` or `npm install` to retrieve all needed dependencies.
 - [ ] Once you have installed the _node_modules_, run `yarn start` or `npm start` to get your server up and running.
 - [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
-Follow these steps for completing your project.
+      Follow these steps for completing your project.
 - [ ] Implement the project on this Branch, **committing progress & changes often.**
 - [ ] Push commits: `git push origin <firstName-lastName>`.
+      Follow these steps for completing your project:
 
-Follow these steps for completing your project:
-
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
 - [ ] Add your Project Manager as a Reviewer on the Pull-request.
 - [ ] PM then will count the HW as done by merging the branch back into master.
-
 
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
 
-- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen. 
+- [ ] Fetch a list of Star Wars characters from the [Star Wars API (or SWAPI)](https://swapi.co/) and render them to the screen.
 - [ ] Follow the documentation to learn how to fetch a list of "people". However, don't spend _too_ long on this. Here is a link for you to follow if you've looked around the docs for about 15 minutes or so and haven't found where to go - [Secret Link to Awesomeness 🤫](https://swapi.co/documentation#people).
 - [ ] Set the data you fetch to state.
 - [ ] Map over the list and render a component for each character on the page.
@@ -75,12 +93,12 @@ Your finished project must include all of the following requirements:
 - [ ] Spell-check.
 - [ ] Schedule time to review, refine and reassess your work.
 
-
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
 
 ## Stretch Problems
 
 - [ ] Add at least one test using a testing tool:
+
   - [react-testing-library](https://github.com/testing-library/react-testing-library#basic-example)
   - [Cypress](https://docs.cypress.io/guides/overview/why-cypress.html)
 
@@ -92,3 +110,30 @@ It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wik
 <!--
 - [ ] Build another app from scratch that looks very similar to this one. Inside of your main `App` component fetch some data in this same fashion from this url `https://dog.ceo/dog-api/#all` you'll have to follow the documentation at that website and figure out how to change up the code you've seen here in this Star Wars app in order to properly fetch the data and store it on Component State.
 -->
+
+## Install
+
+```sh
+yarn install
+```
+
+## Usage
+
+```sh
+yarn start
+```
+
+## Author
+
+👤 **Shelby Diamond**
+
+- Twitter: [@ShelbyN_Diamond](https://twitter.com/ShelbyN_Diamond)
+- Github: [@ShelbyDiamond](https://github.com/ShelbyDiamond)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+---
+
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
